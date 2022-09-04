@@ -52,7 +52,7 @@
               info@devstudio.com
             </a>
           </li>
-          <li class="header-contacts__item">
+          <li class="header-contact__item">
             <a
               href="tel:+380961111111"
               class="header-contact header-contact__link"
@@ -64,38 +64,44 @@
             </a>
           </li>
         </ul>
-        <button type="button" class="nav__open-btn">
+        <button type="button" class="nav__open-btn" data-menu-open>
           <svg class="header-mobile__open-icon" width="40px" height="40px">
             <use href="./images/symbol-defs.svg#header-nav-open-icon"></use>
           </svg>
         </button>
-        <div class="mob-menu">
-          <div class="mob-container">
-            <svg class="header-mob__close-icon" width="40px" height="40px">
-              <use href="./images/symbol-defs.svg#header-nav-close-icon"></use>
-            </svg>
-            <nav>
-              <ul class="mob-menu__nav">
-                <li class="mob-menu__item">
-                  <a href="./index.html" class="mob-menu__link current"
-                    >Студія</a
-                  >
-                </li>
-                <li class="mob-menu__item">
-                  <a href="./portfolio.html" class="mob-menu__link"
-                    >Портфоліо</a
-                  >
-                </li>
-                <li class="mob-menu__item">
-                  <a href="" class="mob-menu__link">Контакти</a>
-                </li>
-              </ul>
-            </nav>
+        <div class="mob-menu is-hidden" data-menu>
+          <div class="container">
+            <div class="menu-top">
+              <button type="button" class="nav__close-btn" data-menu-close>
+                <svg class="header-mob__close-icon" width="40px" height="40px">
+                  <use
+                    href="./images/symbol-defs.svg#header-nav-close-icon"
+                  ></use>
+                </svg>
+              </button>
+              <nav>
+                <ul class="mob-menu__nav">
+                  <li class="mob-menu__item">
+                    <a href="./index.html" class="mob-menu__link current"
+                      >Студія</a
+                    >
+                  </li>
+                  <li class="mob-menu__item">
+                    <a href="./portfolio.html" class="mob-menu__link"
+                      >Портфоліо</a
+                    >
+                  </li>
+                  <li class="mob-menu__item">
+                    <a href="" class="mob-menu__link">Контакти</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
             <ul class="mob-menu__contacts">
               <li class="mob-menu__contacts-item">
                 <a
                   href="tel:+380961111111"
-                  class="mob-menu__contact mob-menu__number"
+                  class="mob-menu__contact mob-menu__tel"
                 >
                   +38 096 111 11 11
                 </a>
@@ -572,5 +578,6 @@
 		</div>
 	</div> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
