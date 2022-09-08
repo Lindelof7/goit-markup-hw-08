@@ -4,18 +4,22 @@
 
 .team__title {
     margin-bottom: 30px;
-
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.14;
     text-align: center;
     letter-spacing: var(--def-letter-spacing);
-
     color: #212121;
+
+@media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 1.16;
+    }
 }
 
 .team__list {
-    display: flex;
+    display: flex;  
     flex-wrap: wrap;
     list-style: none;
     gap: 30px;
