@@ -1,0 +1,229 @@
+
+.modal {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    width: 528px;
+    height: 581px;
+    padding: 40px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: top 500ms, transform 500ms;
+
+    .backdrop.is-hidden & {
+            transform: translate(-50%, 0);
+            top: 100%;
+        }
+}
+
+.modal-exit {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 30px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.modal-exit-icon {
+    transition: var(--usual-transition);
+    .modal-exit:hover & {
+            fill: var(--main-color);
+        }
+}
+
+.modal-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+
+    color: #212121;
+}
+
+.modal-label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    display: flex;
+    margin-bottom: 4px;
+    margin-top: 10px;
+    color: #757575;
+}
+
+.modal-input {
+    padding-left: 32px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+    transition: border var(--usual-transition), border-radius var(--usual-transition);
+
+    &:focus {
+            border: 1px solid var(--main-color);
+            border-radius: 4px;
+        }
+}
+
+.modal-input-wrap {
+    position: relative;
+}
+
+.modal-name-icon {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+
+.modal-tel-icon {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 14.27px;
+    transform: translateY(-50%);
+}
+
+.modal-mail-icon {
+    position: absolute;
+    bottom: 3.5px;
+    left: 13.5px;
+    transform: translateY(-50%);
+}
+
+.modal-icons {
+    transition: fill var(--usual-transition);
+
+    .modal-input:focus+& {
+            fill: var(--main-color)
+        }
+}
+
+.modal-textarea-comments {
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+    outline: none;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border var(--usual-transition), border-radius var(--usual-transition);
+
+    &:focus {
+            border: 1px solid var(--main-color);
+            border-radius: 4px;
+        }
+        &::placeholder {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+}
+}
+
+.input-check-btn {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 15px;
+    width: 16px;
+    margin-right: 8.3px;
+    border: 2px solid black;
+    border-radius: 2px
+}
+
+.label-policy {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+    text-align: center;
+}
+
+.modal-checkbox-policy {
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.checkbox-frame {
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
+    margin: auto;
+}
+
+.checkbox-frame-icon {
+    display: flex;
+    align-items: baseline;
+}
+
+.input-check-btn:checked {
+    background-image: url(../images/modal\ icon\ check\ .svg);
+    background-color: #2196F3;
+    background-size: contain;
+    background-origin: border-box;
+    border-color: #2196F3;
+}
+
+.modal-policy-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+    text-align: center;
+}
+
+.submit-btn {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    left: 700px;
+    top: 712px;
+    border: none;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: var(--usual-transition);
+
+    &:hover {
+            background: #188CE8;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            cursor: pointer;
+        }
+}
+
+.backdrop {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    transition: opacity 500ms, visibility 500ms;
+}
+

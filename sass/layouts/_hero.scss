@@ -8,22 +8,22 @@
     margin: auto;
     background-repeat: no-repeat;
     background-size: cover;
-    @media screen and (min-width: 768px) {
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+@media screen and (min-width: 768px) {
+     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)), url(../../images/hero_bg_tablet.jpg);
     }
-    @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)), url(../../images/hero_bg_desktop.jpg);
     }
     .container {
             padding-right: 60px;
             padding-left: 60px;
-            @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
                     padding-right: 204px;
                     padding-left: 204px;
             }
-             @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
                  padding-right: 252px;
                  padding-left: 252px;
                          }
