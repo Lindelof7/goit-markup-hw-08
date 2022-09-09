@@ -1378,9 +1378,9 @@ img {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  width: 528px;
-  height: 581px;
   padding: 40px;
+  width: 370px;
+  height: 609px;
   position: relative;
   top: 50%;
   left: 50%;
@@ -1395,6 +1395,12 @@ img {
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   top: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal-exit {
