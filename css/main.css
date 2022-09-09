@@ -1315,7 +1315,7 @@ img {
 }
 
 .offer-name {
-  white-space: nowrap;
+  white-space: wrap;
   font-family: "Roboto";
   font-weight: 700;
   font-size: 18px;
