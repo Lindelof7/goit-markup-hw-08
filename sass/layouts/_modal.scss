@@ -4,8 +4,8 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 40px;
-    width: calc(450px - 80px);
-    height: 609px;
+    max-width: calc(100% - 30px);
+    max-height: 100vh;
     position: relative;
     top: 50%;
     left: 50%;
@@ -16,9 +16,14 @@
             transform: translate(-50%, 0);
             top: 100%;
         }
+@media screen and (min-width: 768px) {
+            max-width: 450px;
+            max-height: 609px;
+                }
+
 @media screen and (min-width: 1200px) {
-    width: 528px;
-    height: 581px;
+    max-width: 528px;
+    max-height: 581px;
         }
 }
 
@@ -168,6 +173,16 @@
     left: 10px;
     bottom: 5px;
     margin: auto;
+@media screen and (min-width: 768px) {
+        left: 1px;
+        bottom: 30px;
+            }
+
+@media screen and (min-width: 1200px) {
+    left: 10px;
+    bottom: 5px;
+    margin: auto;
+    }
 }
 
 .checkbox-frame-icon {
@@ -229,5 +244,9 @@
     left: 0;
     background: rgba(0, 0, 0, 0.2);
     transition: opacity 500ms, visibility 500ms;
+    padding-top: 93px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 94px;
 }
 

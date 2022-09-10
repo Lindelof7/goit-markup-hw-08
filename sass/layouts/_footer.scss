@@ -95,7 +95,6 @@
 .footer-links-title {
     display: flex;
     justify-content: center;
-
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
@@ -103,6 +102,9 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--popular-color);
+@media screen and (min-width: 1200px) {
+        justify-content: start;    
+    }
 }
 
 .footer-social {
