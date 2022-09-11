@@ -3,7 +3,7 @@
     padding-top: 118px;
     padding-bottom: 118px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)), url(../../images/hero_bg_mobile.jpg);
+            rgba(47, 48, 58, 0.4)), url(/images/hero_bg_mobile.jpg);
     background-color: #C4C4C4;
     margin: auto;
     background-repeat: no-repeat;
@@ -39,8 +39,6 @@
                   }   
     }
 
-
-
 .container {
             padding-right: 60px;
             padding-left: 60px;
@@ -54,6 +52,7 @@
                          }
         }
 }
+
 .hero__title {
     font-weight: 900;
     font-size: 26px;
