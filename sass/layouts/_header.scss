@@ -182,6 +182,7 @@
     padding-top: 10px;
     padding-bottom: 48px;
    >.container{
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -244,6 +245,7 @@
 
 .mob-menu-soc__list {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .mob-menu-soc__item {
