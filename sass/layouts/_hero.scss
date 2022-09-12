@@ -1,7 +1,5 @@
 .hero {
     text-align: center;
-    padding-top: 118px;
-    padding-bottom: 118px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)), url(../images/hero_bg_mobile.jpg);
     background-color: #C4C4C4;
@@ -42,14 +40,20 @@
 .container {
             padding-right: 60px;
             padding-left: 60px;
+            padding-top: 58px;
+            padding-bottom: 58px;
 @media screen and (min-width: 768px) {
                     padding-right: 204px;
                     padding-left: 204px;
+                    padding-bottom: 58px;
+                    padding-top: 58px;
             }
 @media screen and (min-width: 1200px) {
                  padding-right: 252px;
                  padding-left: 252px;
-                         }
+                 padding-top: 106px;
+                 padding-bottom: 106px;
+                }
         }
 }
 

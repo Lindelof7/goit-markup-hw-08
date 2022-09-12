@@ -419,8 +419,6 @@ img {
 
 .hero {
   text-align: center;
-  padding-top: 118px;
-  padding-bottom: 118px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero_bg_mobile.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_bg_mobile.jpg);
   background-color: #C4C4C4;
@@ -461,17 +459,23 @@ img {
 .hero .container {
   padding-right: 60px;
   padding-left: 60px;
+  padding-top: 58px;
+  padding-bottom: 58px;
 }
 @media screen and (min-width: 768px) {
   .hero .container {
     padding-right: 204px;
     padding-left: 204px;
+    padding-bottom: 58px;
+    padding-top: 58px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero .container {
     padding-right: 252px;
     padding-left: 252px;
+    padding-top: 106px;
+    padding-bottom: 106px;
   }
 }
 
@@ -1329,12 +1333,12 @@ img {
 }
 @media screen and (min-width: 768px) {
   .card-portfolio {
-    width: calc(50% - 30px);
+    width: calc(50% - 15px);
   }
 }
 @media screen and (min-width: 1200px) {
   .card-portfolio {
-    width: calc(33.3333333333% - 60px);
+    width: calc(33.3333333333% - 20px);
   }
 }
 
@@ -1407,7 +1411,7 @@ img {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
-  max-width: calc(100% - 30px);
+  max-width: 450px;
   max-height: 100vh;
   position: relative;
   top: 50%;
@@ -1598,11 +1602,16 @@ img {
 .label-policy {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .label-policy {
+    font-size: 14px;
+  }
 }
 
 .modal-checkbox-policy {
@@ -1613,14 +1622,14 @@ img {
 
 .checkbox-frame {
   position: absolute;
-  left: 10px;
+  left: 0px;
   bottom: 5px;
   margin: auto;
 }
 @media screen and (min-width: 768px) {
   .checkbox-frame {
-    left: 1px;
-    bottom: 30px;
+    left: 0px;
+    bottom: 5px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1651,11 +1660,16 @@ img {
 .modal-policy-link {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-color);
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .modal-policy-link {
+    font-size: 14px;
+  }
 }
 
 .submit-btn {

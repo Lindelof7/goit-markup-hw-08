@@ -4,7 +4,7 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 40px;
-    max-width: calc(100% - 30px);
+    max-width: 450px;
     max-height: 100vh;
     position: relative;
     top: 50%;
@@ -155,11 +155,14 @@
 .label-policy {
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
     text-align: center;
+@media screen and (min-width: 1200px) {
+        font-size: 14px;
+            }
 }
 
 .modal-checkbox-policy {
@@ -170,12 +173,12 @@
 
 .checkbox-frame {
     position: absolute;
-    left: 10px;
+    left: 0px;
     bottom: 5px;
     margin: auto;
 @media screen and (min-width: 768px) {
-        left: 1px;
-        bottom: 30px;
+        left: 0px;
+        bottom: 5px;
             }
 
 @media screen and (min-width: 1200px) {
@@ -201,11 +204,14 @@
 .modal-policy-link {
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--main-color);
     text-align: center;
+@media screen and (min-width: 1200px) {
+        font-size: 14px;
+            }    
 }
 
 .submit-btn {
